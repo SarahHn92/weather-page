@@ -1,0 +1,12 @@
+.header {
+    top: 0;
+    background-image: linear-gradient(grey, black);
+    font-family: 'Train One', cursive;
+    color: #b7410e;
+    font-size: 50px;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}

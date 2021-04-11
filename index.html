@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Weather Forcast Dashboard</title>
 </head>
@@ -14,9 +13,29 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <form action=""></form>
+    <div class="container-fluid">
+        <aside class="row">
+            <form class="col-md-3">
+                <div class="input-group m2 pr-3">
+                    <input type="text" id="city" placeholder="City Search"> 
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="citySearchButton"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </aside>
 
+        <div id="previous-searches"></div>
+        
+
+        <div id="search-results"></div>
+    </div>
+    
     <footer> Made by SHinton</footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

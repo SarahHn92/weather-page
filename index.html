@@ -20,28 +20,41 @@
                 <div class="input-group m2 pr-3">
                     <input type="text" id="city" placeholder="City Search"> 
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="submit" id="citySearchButton"><i class="fas fa-search"></i></button>
+                        <input type="submit" class="btn btn-outline-secondary" id="searchBtn" value="Search">
                     </div>
                 </div>
             </form>
+
             <div class="w-100">
                 <ul class="list-group savedCities mx-2 mt-3"></ul>
             </div>
         </aside>
 
-        <div class="col-md-9">
-            <div class="card m-2">
-                <div class="card-body cityCurrently"></div>
-            </div>
-            <div class="m-2">
-                <h3>5 day Forecast:</h3>
-                <div class="5days row"></div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card m-2">
+                    <div class="card-body cityCurrently">
+                        <div id="currentCityName"></div>
+                        <div id="currentDate"></div>
+                        <div id="currentIcon"></div>
+                        <div id="currentTemp"></div>
+                        <div id="currentHumidity"></div>
+                        <div id="currentWindSpeed"></div>
+                        <div id="currentUV"></div>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <h3>5 day Forecast:</h3>
+                    <div id="fiveDayForecast" class="5days row">
+                        
+                    </div>
+                </div>
             </div>
         </div>
+        
 
         <div id="previous-searches"></div>
         
-
         <div id="search-results"></div>
     </div>
     
@@ -50,6 +63,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ca22f23350.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
